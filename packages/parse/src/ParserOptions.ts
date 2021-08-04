@@ -55,6 +55,8 @@ export class ParserOptions {
 
     public readonly discardUnmappedColumns: boolean = false;
 
+    public readonly allowDuplicate: boolean = false;
+
     public readonly carriageReturn: string = '\r';
 
     public readonly NEXT_TOKEN_REGEXP: RegExp;

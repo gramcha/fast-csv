@@ -2,10 +2,11 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('fast-csv');
 
-fs.createReadStream(path.resolve(__dirname, 'assets', 'parse.csv'))
-    .pipe(csv.parse({ headers: true }))
+// fs.createReadStream(path.resolve(__dirname, 'assets', 'duplicate-parse.csv'))
+fs.createReadStream(path.resolve(__dirname, 'assets', 'test-duplicate-header.csv'))
+    .pipe(csv.parse({ headers: true, discardUnmappedColumns: true, allowDuplicate: true }))
     .on('error', (error) => console.error(error))
-    .on('data', (row) => console.log(row))
+    .on('data', (row) => console.log(JSON.stringify(row)))
     .on('end', (rowCount) => console.log(`Parsed ${rowCount} rows`));
 
 // Output:
