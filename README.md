@@ -27,9 +27,9 @@ See [installation docs](https://c2fo.io/fast-csv/docs/introduction/install)
 ## Packages
 
 
-* `fast-csv` - One stop shop for all methods and options from `@fast-csv/format` and `@fast-csv/parse`. [Get Started!](https://c2fo.io/fast-csv/docs/introduction/getting-started)
-* `@fast-csv/parse` - Parsing package, use this if you only need to parse files. [Get Started!](https://c2fo.io/fast-csv/docs/parsing/getting-started)
-* `@fast-csv/format` - Formatting package, use this if you only need to format files. [Get Started!](https://c2fo.io/fast-csv/docs/formatting/getting-started)
+* `fast-csv` - One stop shop for all methods and options from `@pando/format` and `@pando/parse`. [Get Started!](https://c2fo.io/fast-csv/docs/introduction/getting-started)
+* `@pando/parse` - Parsing package, use this if you only need to parse files. [Get Started!](https://c2fo.io/fast-csv/docs/parsing/getting-started)
+* `@pando/format` - Formatting package, use this if you only need to format files. [Get Started!](https://c2fo.io/fast-csv/docs/formatting/getting-started)
 
 ## License
 

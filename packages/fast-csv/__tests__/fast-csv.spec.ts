@@ -1,4 +1,4 @@
-import * as csvFormat from '@fast-csv/format';
+import * as csvFormat from '@pando/format';
 import * as csv from '../src';
 
 describe('formatting function', () => {

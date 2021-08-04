@@ -21,9 +21,9 @@ See [installation docs](./install.md)
 ## Packages
 
 
-* `fast-csv` - One stop shop for all methods and options from `@fast-csv/format` and `@fast-csv/parse`.
-* `@fast-csv/parse` - Parsing package, use this if you only need to parse files. [Get Started!](../parsing/getting-started.mdx)
-* `@fast-csv/format` - Formatting package, use this if you only need to format files. [Get Started!](../formatting/getting-started.mdx)
+* `fast-csv` - One stop shop for all methods and options from `@pando/format` and `@pando/parse`.
+* `@pando/parse` - Parsing package, use this if you only need to parse files. [Get Started!](../parsing/getting-started.mdx)
+* `@pando/format` - Formatting package, use this if you only need to format files. [Get Started!](../formatting/getting-started.mdx)
 
 ### Migrating from older versions
 

@@ -1,4 +1,4 @@
-`@fast-csv/format` javascript formatting examples.
+`@pando/format` javascript formatting examples.
 
 ## Usage
 

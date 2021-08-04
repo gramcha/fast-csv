@@ -4,8 +4,8 @@
     "baseUrl": ".",
     "paths": {
       "fast-csv": ["packages/fast-csv/src"],
-      "@fast-csv/format": ["packages/format/src"],
-      "@fast-csv/parse": ["packages/parse/src"]
+      "@pando/format": ["packages/format/src"],
+      "@pando/parse": ["packages/parse/src"]
     }
   },
   "references": [

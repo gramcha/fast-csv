@@ -1,4 +1,4 @@
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 interface CsvRow {
     header1: string;

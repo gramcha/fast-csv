@@ -1,4 +1,4 @@
-const csv = require('@fast-csv/format');
+const csv = require('@pando/format');
 
 const stream = csv.format({ delimiter: '\t' });
 stream.pipe(process.stdout);

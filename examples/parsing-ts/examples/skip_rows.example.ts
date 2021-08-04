@@ -1,4 +1,4 @@
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const rows = [
     'header1,header2\n',

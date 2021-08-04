@@ -1,4 +1,4 @@
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const stream = parse({ headers: true })
     .on('error', (error) => console.error(error))

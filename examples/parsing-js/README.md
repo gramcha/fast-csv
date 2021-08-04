@@ -1,4 +1,4 @@
-`@fast-csv/parse` javascript parsing examples.
+`@pando/parse` javascript parsing examples.
 
 ## Usage
 

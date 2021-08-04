@@ -1,4 +1,4 @@
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true, quoteHeaders: true });
 

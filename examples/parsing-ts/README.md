@@ -1,4 +1,4 @@
-`@fast-csv/parse` typescript parsing examples.
+`@pando/parse` typescript parsing examples.
 
 ## Usage
 

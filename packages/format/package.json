@@ -1,5 +1,5 @@
 {
-  "name": "@fast-csv/format",
+  "name": "@pando/format",
   "version": "4.3.5",
   "description": "fast-csv formatting module",
   "keywords": [

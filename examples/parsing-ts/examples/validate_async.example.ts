@@ -1,5 +1,5 @@
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = ['firstName,lastName', 'bob,yukon', 'sally,yukon', 'timmy,yukon'].join(EOL);
 

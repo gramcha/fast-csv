@@ -1,4 +1,4 @@
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 const rows = [
     'skip1_header1,skip1_header2\n',

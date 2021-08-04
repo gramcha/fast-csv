@@ -9,7 +9,7 @@
 
 # `fast-csv`
 
-Package that combines both [`@fast-csv/format`](https://c2fo.io/fast-csv/docs/formatting/getting-started) and [`@fast-csv/parse`](https://c2fo.io/fast-csv/docs/parsing/getting-started) into a single package.
+Package that combines both [`@pando/format`](https://c2fo.io/fast-csv/docs/formatting/getting-started) and [`@pando/parse`](https://c2fo.io/fast-csv/docs/parsing/getting-started) into a single package.
 
 ## Installation
 

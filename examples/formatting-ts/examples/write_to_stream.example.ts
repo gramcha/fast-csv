@@ -1,4 +1,4 @@
-import { writeToStream } from '@fast-csv/format';
+import { writeToStream } from '@pando/format';
 
 const rows = [
     ['a', 'b'],

@@ -1,6 +1,6 @@
 import * as path from 'path';
 import * as fs from 'fs';
-import { FormatterOptionsArgs, Row, writeToStream } from '@fast-csv/format';
+import { FormatterOptionsArgs, Row, writeToStream } from '@pando/format';
 
 type CsvFileOpts = {
     headers: string[];

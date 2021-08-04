@@ -24,7 +24,7 @@ You can change the default delimiter `,` by specifying the `delimiter` option
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const stream = format({ delimiter: '\t' });
 stream.pipe(process.stdout);
@@ -39,7 +39,7 @@ stream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const stream = format({ delimiter: '\t' });
 stream.pipe(process.stdout);
@@ -79,7 +79,7 @@ You can change the default row delimiter `\n` by specifying the `rowDelimiter` o
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const stream = format({ rowDelimiter: '||' });
 stream.pipe(process.stdout);
@@ -94,7 +94,7 @@ stream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const stream = format({ rowDelimiter: '||' });
 stream.pipe(process.stdout);
@@ -132,7 +132,7 @@ You change change the default quote `"` option by specifying the `quote` option.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const stream = format({ quote: "'" });
 stream.pipe(process.stdout);
@@ -148,7 +148,7 @@ stream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const stream = format({ quote: "'" });
 stream.pipe(process.stdout);
@@ -189,7 +189,7 @@ You change change the default escape `"` option by specifying the `escpae` optio
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const stream = format({ escape: "'" });
 stream.pipe(process.stdout);
@@ -205,7 +205,7 @@ stream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const stream = format({ escape: "'" });
 stream.pipe(process.stdout);
@@ -254,7 +254,7 @@ In this example the headers are auto-discovered from the objects passed in.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true });
 
@@ -271,7 +271,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true });
 
@@ -311,7 +311,7 @@ In this example the headers are auto-discovered from the hash arrays passed in.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true });
 
@@ -340,7 +340,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true });
 
@@ -402,7 +402,7 @@ In this example a custom set of headers is provided for rows that are arrays.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: ['header1', 'header2'] });
 
@@ -419,7 +419,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: ['header1', 'header2'] });
 
@@ -459,7 +459,7 @@ In this example the headers are overridden with a custom set of headers
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: ['header1', 'header2'] });
 
@@ -488,7 +488,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: ['header1', 'header2'] });
 
@@ -540,7 +540,7 @@ In this example the columns are reordered.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: ['header2', 'header1'] });
 
@@ -557,7 +557,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: ['header2', 'header1'] });
 
@@ -597,7 +597,7 @@ In this example one of the columns is removed.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: ['header2'] });
 
@@ -614,7 +614,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: ['header2'] });
 
@@ -666,7 +666,7 @@ In this example the auto discovered headers are not written.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true, writeHeaders: false });
 
@@ -683,7 +683,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true, writeHeaders: false });
 
@@ -723,7 +723,7 @@ In this example the headers are provided to specify order of columns but they ar
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: ['header2', 'header1'], writeHeaders: false });
 
@@ -740,7 +740,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: ['header2', 'header1'], writeHeaders: false });
 
@@ -786,7 +786,7 @@ Setting `quoteColumns` to true will by default quote all columns and headers.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true, quoteColumns: true });
 
@@ -803,7 +803,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true, quoteColumns: true });
 
@@ -845,7 +845,7 @@ Setting `quoteColumns` to a `boolean[]` will quote the columns that are set to t
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: ['header1', 'header2'], quoteColumns: [false, true] });
 
@@ -862,7 +862,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: ['header1', 'header2'], quoteColumns: [false, true] });
 
@@ -903,7 +903,7 @@ Setting `quoteColumns` to a `{[string]: boolean}` will quote the columns that ar
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true, quoteColumns: { header2: true } });
 
@@ -920,7 +920,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true, quoteColumns: { header2: true } });
 
@@ -961,7 +961,7 @@ If you need to quote columns and not headers you can set `quoteHeaders` to `fals
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true, quoteColumns: { header2: true }, quoteHeaders: false });
 
@@ -978,7 +978,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true, quoteColumns: { header2: true }, quoteHeaders: false });
 
@@ -1022,7 +1022,7 @@ The `quoteHeaders` option uses the same types as `quoteColumns`.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true, quoteHeaders: true });
 
@@ -1039,7 +1039,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true, quoteHeaders: true });
 
@@ -1079,7 +1079,7 @@ In this example we specify the headers to quote by passing in an array to specif
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: ['header1', 'header2'], quoteHeaders: [false, true] });
 
@@ -1096,7 +1096,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: ['header1', 'header2'], quoteHeaders: [false, true] });
 
@@ -1137,7 +1137,7 @@ is a boolean.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const csvStream = format({ headers: true, quoteHeaders: { header2: true } });
 
@@ -1154,7 +1154,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true, quoteHeaders: { header2: true } });
 
@@ -1198,7 +1198,7 @@ You can transform rows by using the `.transform` method.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 interface CsvRow {
     header1: string;
@@ -1223,7 +1223,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true }).transform(row => ({
     header1: row.header1.toUpperCase(),
@@ -1266,7 +1266,7 @@ You can also specify your transform method as an option.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 interface CsvRow {
     header1: string;
@@ -1293,7 +1293,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const transform = row => ({
     header1: row.header1.toUpperCase(),
@@ -1338,7 +1338,7 @@ Transform can also be async by accepting a callback.
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 interface CsvRow {
     header1: string;
@@ -1366,7 +1366,7 @@ csvStream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const csvStream = format({ headers: true })
     .transform((row, cb) => {
@@ -1418,7 +1418,7 @@ In this example a new csv is created then appended to.
 ```ts
 import * as path from 'path';
 import * as fs from 'fs';
-import { FormatterOptionsArgs, Row, writeToStream } from '@fast-csv/format';
+import { FormatterOptionsArgs, Row, writeToStream } from '@pando/format';
 
 type CsvFileOpts = {
     headers: string[];
@@ -1508,7 +1508,7 @@ csvFile
 ```js
 const path = require('path');
 const fs = require('fs');
-const csv = require('@fast-csv/format');
+const csv = require('@pando/format');
 
 class CsvFile {
     static write(filestream, rows, options) {

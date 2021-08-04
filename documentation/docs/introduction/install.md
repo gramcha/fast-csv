@@ -8,14 +8,14 @@ title: Installation
 npm i -S fast-csv
 ```
 
-## @fast-csv/parse
+## @pando/parse
 
 ```sh
-npm i -S @fast-csv/parse
+npm i -S @pando/parse
 ```
 
-## @fast-csv/format
+## @pando/format
 
 ```sh
-npm i -S @fast-csv/format
+npm i -S @pando/format
 ```

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 fs.createReadStream(path.resolve(__dirname, '..', 'assets', 'snake_case_users.csv'))
     .pipe(csv.parse())

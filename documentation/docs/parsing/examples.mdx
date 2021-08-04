@@ -21,7 +21,7 @@ import TabItem from '@theme/TabItem';
 <TabItem value="ts">
 
 ```ts
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const stream = parse({ headers: true })
     .on('error', error => console.error(error))
@@ -78,7 +78,7 @@ You can provide a `delimiter` option to change the delimiter from a `,` characte
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'a1\tb1',
@@ -148,7 +148,7 @@ Setting the `headers` option to `true` will cause change each row to an object r
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'a,b',
@@ -222,7 +222,7 @@ not match.
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'a1,b1',
@@ -289,7 +289,7 @@ If the CSV contains a header row but you want to provide custom headers you can 
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'header1,header2',
@@ -358,7 +358,7 @@ If the CSV contains a header row but you want transform the headers you can prov
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'header1,header2',
@@ -431,7 +431,7 @@ To omit some of the data columns you may not need, pass a sparse array as `heade
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'a1,b1,c1',
@@ -501,7 +501,7 @@ Any rows consisting of nothing but empty strings and/or commas will be skipped, 
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'a1,b1',
@@ -574,7 +574,7 @@ You can transform data by providing a transform function. What is returned from 
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'firstName,lastName',
@@ -663,7 +663,7 @@ Parsed 3 rows
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'firstName,lastName',
@@ -760,7 +760,7 @@ You can validate each row in the CSV by providing a validate handler. If a row i
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'firstName,lastName',
@@ -838,7 +838,7 @@ Parsed 2 rows
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'firstName,lastName',
@@ -919,7 +919,7 @@ Sometimes you may wish to provide a reason that the row was invalid, you can use
 
 ```ts
 import { EOL } from 'os';
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const CSV_STRING = [
     'firstName,lastName',
@@ -1015,7 +1015,7 @@ In the following example there are 10 rows, but only 5 will be parsed because of
 <TabItem value="ts">
 
 ```ts
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const rows = [
     'header1,header2\n',
@@ -1105,7 +1105,7 @@ Notice how the headers are not skipped, only the rows.
 <TabItem value="ts">
 
 ```ts
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const rows = [
     'header1,header2\n',
@@ -1186,7 +1186,7 @@ Notice how the headers come from the third line because the first two are skippe
 <TabItem value="ts">
 
 ```ts
-import { parse } from '@fast-csv/parse';
+import { parse } from '@pando/parse';
 
 const rows = [
     'skip1_header1,skip1_header2\n',

@@ -1,5 +1,5 @@
 {
-  "name": "@fast-csv/parse-ts-examples",
+  "name": "@pando/parse-ts-examples",
   "version": "4.3.6",
   "private": true,
   "description": "fast-csv parsing typescript examples",
@@ -12,7 +12,7 @@
     "compile": "tsc"
   },
   "dependencies": {
-    "@fast-csv/parse": "4.3.6",
+    "@pando/parse": "4.3.6",
     "example-runner": "4.3.6",
     "typescript": "4.0.5"
   }

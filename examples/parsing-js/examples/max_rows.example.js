@@ -1,4 +1,4 @@
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 const rows = [
     'header1,header2\n',

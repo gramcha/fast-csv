@@ -36,7 +36,7 @@ fs.createReadStream('my.csv')
 
 ```js
 const fs = require('fs');
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 fs.createReadStream('my.csv')
     .pipe(csv.parse())
@@ -80,7 +80,7 @@ parseStream(stream)
 
 ```js
 const fs = require('fs');
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 const stream = fs.createReadStream('my.csv');
 
@@ -122,7 +122,7 @@ parseFile('my.csv')
 
 ```js
 const fs = require('fs');
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 csv.parseFile('my.csv')
     .on('error', error => console.error(error))
@@ -149,7 +149,7 @@ This method parses a string and returns the `CsvParserStream`.
 
 ```ts
 import { EOL } from 'os';
-import { parseString } from '@fast-csv/parse';
+import { parseString } from '@pando/parse';
 
 const CSV_STRING = ['a,b', 'a1,b1', 'a2,b2'].join(EOL);
 
@@ -164,7 +164,7 @@ parseString(CSV_STRING, { headers: true })
 
 ```js
 const { EOL } = require('os');
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 const CSV_STRING = ['a,b', 'a1,b1', 'a2,b2'].join(EOL);
 

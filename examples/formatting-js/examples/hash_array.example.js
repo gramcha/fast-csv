@@ -1,4 +1,4 @@
-const csv = require('@fast-csv/format');
+const csv = require('@pando/format');
 
 const csvStream = csv.format({ headers: true });
 

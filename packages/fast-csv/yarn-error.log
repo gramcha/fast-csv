@@ -1,0 +1,78 @@
+Arguments: 
+  /Users/gramcha/.nvm/versions/node/v14.17.0/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/opt/openjdk/bin:/Users/gramcha/.jenv/shims:/Users/gramcha/.jenv/shims:/Users/gramcha/.jenv/bin:/Users/gramcha/.jenv/bin:/Users/gramcha/chromedriver:/opt/local/bin:/opt/local/sbin:/Users/gramcha/.nvm/versions/node/v14.17.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  14.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@pando%2fformat: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:66091:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:129590:22)
+      at Request.emit (events.js:376:20)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:130562:10)
+      at Request.emit (events.js:376:20)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:130484:12)
+      at Object.onceWrapper (events.js:482:28)
+      at IncomingMessage.emit (events.js:388:22)
+      at endReadableNT (internal/streams/readable.js:1336:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "fast-csv",
+    "version": "4.3.6",
+    "description": "CSV parser and writer",
+    "main": "./build/src/index.js",
+    "types": "./build/src/index.d.ts",
+    "scripts": {
+      "prepublishOnly": "npm run build",
+      "build": "npm run clean && npm run compile",
+      "clean": "rm -rf ./build && rm -rf tsconfig.tsbuildinfo",
+      "compile": "tsc"
+    },
+    "directories": {
+      "lib": "src",
+      "test": "__tests__"
+    },
+    "files": [
+      "build/src/**"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gramcha/fast-csv.git",
+      "directory": "packages/fast-csv"
+    },
+    "keywords": [
+      "csv",
+      "parser",
+      "fast",
+      "writer",
+      "csv writer",
+      "CSV"
+    ],
+    "homepage": "http://c2fo.github.com/fast-csv",
+    "author": "Doug Martin",
+    "license": "MIT",
+    "engines": {
+      "node": ">=10.0.0"
+    },
+    "dependencies": {
+      "@pando/format": "4.3.5",
+      "@pando/parse": "4.3.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

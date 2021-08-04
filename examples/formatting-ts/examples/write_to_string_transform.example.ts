@@ -1,4 +1,4 @@
-import { RowMap, writeToString } from '@fast-csv/format';
+import { RowMap, writeToString } from '@pando/format';
 
 const data = [
     { a: 'a1', b: 'b1' },

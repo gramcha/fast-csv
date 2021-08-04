@@ -1,5 +1,5 @@
 {
-  "name": "@fast-csv/parse",
+  "name": "@pando/parse",
   "version": "4.3.6",
   "description": "fast-csv parsing package",
   "keywords": [

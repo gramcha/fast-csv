@@ -167,7 +167,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## v4.0.2
 
-* [ADDED] `writeHeaders` to `@fast-csv/format` option to prevent writing headers.
+* [ADDED] `writeHeaders` to `@pando/format` option to prevent writing headers.
     * This makes appending to a csv easier and safer because you can still specify headers without writing them.
 
 ## v4.0.1

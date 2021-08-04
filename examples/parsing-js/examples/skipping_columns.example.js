@@ -1,5 +1,5 @@
 const { EOL } = require('os');
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 const CSV_STRING = ['a1,b1,c1', 'a2,b2,c2'].join(EOL);
 

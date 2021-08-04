@@ -1,5 +1,5 @@
 {
-  "name": "@fast-csv/format-js-examples",
+  "name": "@pando/format-js-examples",
   "version": "4.3.6",
   "private": true,
   "description": "fast-csv formatting examples",
@@ -9,7 +9,7 @@
     "example": "run-examples run"
   },
   "dependencies": {
-    "@fast-csv/format": "4.3.5",
+    "@pando/format": "4.3.5",
     "example-runner": "4.3.6"
   }
 }

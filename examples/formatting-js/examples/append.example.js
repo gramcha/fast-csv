@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const csv = require('@fast-csv/format');
+const csv = require('@pando/format');
 
 class CsvFile {
     static write(filestream, rows, options) {

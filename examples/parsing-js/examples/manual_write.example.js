@@ -1,4 +1,4 @@
-const csv = require('@fast-csv/parse');
+const csv = require('@pando/parse');
 
 const stream = csv
     .parse({ headers: true })

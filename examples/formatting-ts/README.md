@@ -1,4 +1,4 @@
-`@fast-csv/format` typescript formatting examples.
+`@pando/format` typescript formatting examples.
 
 ## Usage
 

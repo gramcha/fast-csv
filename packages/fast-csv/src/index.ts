@@ -14,7 +14,7 @@ export {
     RowHashArray as FormatterRowHashArray,
     RowTransformCallback as FormatterRowTransformCallback,
     RowTransformFunction as FormatterRowTransformFunction,
-} from '@fast-csv/format';
+} from '@pando/format';
 
 export {
     parse,
@@ -37,4 +37,4 @@ export {
     RowTransformFunction as ParserRowTransformFunction,
     HeaderArray as ParserHeaderArray,
     HeaderTransformFunction as ParserHeaderTransformFunction,
-} from '@fast-csv/parse';
+} from '@pando/parse';

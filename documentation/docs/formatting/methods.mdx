@@ -20,7 +20,7 @@ This is the main entry point for formatting CSVs. It is used by all other helper
 <TabItem value="ts">
 
 ```ts
-import { format } from '@fast-csv/format';
+import { format } from '@pando/format';
 
 const stream = format();
 stream.pipe(process.stdout);
@@ -35,7 +35,7 @@ stream.end();
 <TabItem value="js">
 
 ```js
-const { format } = require('@fast-csv/format');
+const { format } = require('@pando/format');
 
 const stream = format();
 stream.pipe(process.stdout);
@@ -74,7 +74,7 @@ Create a formatter, writes the rows and returns the `CsvFormatterStream`.
 <TabItem value="ts">
 
 ```ts
-import { write } from '@fast-csv/format';
+import { write } from '@pando/format';
 
 const rows = [
     ['a', 'b'],
@@ -88,7 +88,7 @@ write(rows).pipe(process.stdout);
 <TabItem value="js">
 
 ```js
-const { write } = require('@fast-csv/format');
+const { write } = require('@pando/format');
 
 const rows = [
     ['a', 'b'],
@@ -126,7 +126,7 @@ Write an array of values to a `WritableStream`, and returns the original stream
 <TabItem value="ts">
 
 ```ts
-import { writeToStream } from '@fast-csv/format';
+import { writeToStream } from '@pando/format';
 
 const rows = [
     ['a', 'b'],
@@ -140,7 +140,7 @@ writeToStream(process.stdout, rows);
 <TabItem value="js">
 
 ```js
-const { writeToStream } = require('@fast-csv/format');
+const { writeToStream } = require('@pando/format');
 
 const rows = [
     ['a', 'b'],
@@ -178,7 +178,7 @@ Write an array of values to the specified path
 <TabItem value="ts">
 
 ```ts
-import { writeToPath } from '@fast-csv/format';
+import { writeToPath } from '@pando/format';
 
 const rows = [
     ['a', 'b'],
@@ -195,7 +195,7 @@ writeToPath(path.resolve(__dirname, 'tmp.csv'), rows)
 <TabItem value="js">
 
 ```js
-const { writeToPath } = require('@fast-csv/format');
+const { writeToPath } = require('@pando/format');
 
 const rows = [
     ['a', 'b'],
@@ -236,7 +236,7 @@ Formats the rows and returns a `Promise` that will resolve with the CSV content 
 <TabItem value="ts">
 
 ```ts
-import { writeToString } from '@fast-csv/format';
+import { writeToString } from '@pando/format';
 
 const rows = [
     ['a', 'b'],
@@ -250,7 +250,7 @@ writeToString(rows).then(data => console.log(data));
 <TabItem value="js">
 
 ```js
-const { writeToString } = require('@fast-csv/format');
+const { writeToString } = require('@pando/format');
 
 const rows = [
     ['a', 'b'],
@@ -288,7 +288,7 @@ Formats the rows and returns a `Promise` that will resolve with the CSV content 
 <TabItem value="ts">
 
 ```ts
-import { writeToBuffer } from '@fast-csv/format';
+import { writeToBuffer } from '@pando/format';
 
 const rows = [
     ['a', 'b'],
@@ -302,7 +302,7 @@ writeToBuffer(rows).then(data => console.log(data.toString()));
 <TabItem value="js">
 
 ```js
-const { writeToBuffer } = require('@fast-csv/format');
+const { writeToBuffer } = require('@pando/format');
 
 const rows = [
     ['a', 'b'],

@@ -1,4 +1,4 @@
-import { writeToBuffer } from '@fast-csv/format';
+import { writeToBuffer } from '@pando/format';
 
 const rows = [
     ['a', 'b'],
