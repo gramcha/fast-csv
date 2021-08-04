@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:C2FO/fast-csv.git"
+    "url": "git@github.com:gramcha/fast-csv.git"
   },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
